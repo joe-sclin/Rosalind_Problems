@@ -8,7 +8,7 @@ with open(parser.parse_args().s) as f:
 re = ''
 for c in s:
 	if c == 'A': re = 'T' + re
-	if c == 'C': re = 'G' + re
-	if c == "G": re = 'C' + re
-	if c == "T": re = 'A' + re
+	elif c == 'C': re = 'G' + re
+	elif c == "G": re = 'C' + re
+	elif c == "T": re = 'A' + re
 print(re)
